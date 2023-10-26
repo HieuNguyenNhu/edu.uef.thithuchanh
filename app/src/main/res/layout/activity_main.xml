@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Menu"
+            android:textSize="40dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Bread"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            />
+        <ImageView
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:src="@drawable/bread"></ImageView>
+
+
+        <Button
+            android:id="@+id/Bread"
+            android:layout_width="225dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:onClick="add_to_list"
+            android:text="Add" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="2"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_weight="1"
+            android:text="CherryCheeseCake"
+            android:textSize="30sp"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <ImageView
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:src="@drawable/cherrycheesecake"></ImageView>
+
+        <Button
+            android:id="@+id/CherryCheeseCake"
+            android:layout_width="222dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:onClick="add_to_list"
+            android:text="Add" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="2"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="255dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="GingerbreadHouse"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+        <ImageView
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:src="@drawable/gingerbreadhouse"></ImageView>
+
+        <Button
+            android:id="@+id/GingerbreadHouse"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:onClick="add_to_list"
+            android:text="Add" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="2"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="255dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:text="Hamburger"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+        <ImageView
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:src="@drawable/hamburger"></ImageView>
+
+        <Button
+            android:id="@+id/Hamburger"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:onClick="add_to_list"
+            android:text="Add" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="2"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="255dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="SunnySideUpEggs"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+        <ImageView
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:src="@drawable/sunnysideupeggs"></ImageView>
+
+        <Button
+            android:id="@+id/SunnySideUpEggs"
+            android:layout_width="58dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:onClick="add_to_list"
+            android:text="Add" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="325dp"
+        android:layout_height="50dp">
+        <Button
+            android:onClick="PlaceOrder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:text="Order"
+            android:textSize="25dp"/>
+
+    </LinearLayout>
+</LinearLayout>
